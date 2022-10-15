@@ -1,0 +1,173 @@
+.main-content{
+  background: url("../../assets/background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__info{
+    text-align: center;
+  }
+  &__link{
+      display: flex;
+      justify-content: center;
+  }
+  &__button{
+    border: none;
+    border-radius: 5px;
+    background: #efc12b;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  &__text{
+    font-size: 50px;
+    color: white;
+    width: 600px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__description{
+    font-size: 30px;
+    color: white;
+    width: 600px;
+    text-align: center;
+  }
+}
+
+.main-info{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+  row-gap: 30px;
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div:first-child{
+      font-size: 50px;
+    }
+    div:last-child{
+      font-size: 30px;
+    }
+  }
+
+  &__text-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__car-image{
+      width: 450px;
+      position: absolute;
+      margin-left: 350px;
+      margin-top: 265px;
+  }
+
+  &__frame{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-left: 640px;
+  }
+
+  &__text-block{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 600px;
+    div:first-child{
+      font-size: 28px;
+      color: #4747de;
+      font-weight: bold;
+    }
+    ul{
+      margin-left: -20px;
+    }
+  }
+
+  &__ul-block{
+    margin-top:40px;
+    max-width: 350px;
+  }
+
+  &__first-block{
+    width: 862px;
+    background: url("../../assets/background1.png");
+    position: relative;
+    background-repeat: no-repeat;
+  }
+
+  &__town{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__second-block{
+    max-width: 460px;
+    background: #EEF2F7;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 24px;
+    a{
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+  &__where-from{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    column-gap: 10px;
+    margin-top:10px;
+    div:first-child{
+      width: 400px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      input{
+        height: 24px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding: 5px;
+      }
+    }
+    div:last-child{
+      width: 100px;
+      font-size: 12px;
+      display: flex;
+      margin-top: 12px;
+      flex-direction: column;
+      button{
+        background: white;
+        border:1px solid grey;
+        border-radius: 5px;
+        width: 70px;
+      }
+    }
+  }
+  &__map-logo{
+    width: 24px;
+    height: 28px;
+  }
+  &__content{
+    display: flex;
+    column-gap: 10px;
+    padding: 40px;
+  }
+}

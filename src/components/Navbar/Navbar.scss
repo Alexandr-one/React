@@ -1,0 +1,120 @@
+.navbar-active{
+  display: flex;
+  position: fixed;
+  background: transparent;
+  width:100%;
+  z-index: 2;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  background: white;
+  width:100%;
+  z-index: 2;
+  &__inner {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__content {
+    padding: 8px 12px;
+    display: flex;
+    column-gap: 72px;
+  }
+
+  &__btn {
+    padding: 8px;
+    max-width: 160px;
+    border: none;
+    background-color: #efc12b;
+    border-radius: 4px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+}
+
+.navbar-auth {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  &__registration {
+  }
+
+  &__authorization {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__free {
+    justify-content: end;
+    display: flex;
+  }
+
+  &__moscow {
+    justify-content: end;
+    display: flex;
+    column-gap: 5px;
+  }
+  &__help{
+    text-align: end;
+  }
+}
+
+.navbar-burger{
+  width: 20px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.navbar-burger:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background: black;
+  height: 2px;
+}
+
+.navbar-burger span{
+  content: '';
+  position: absolute;
+  top: 9px;
+  width: 20px;
+  background: black;
+  height: 2px;
+}
+
+.navbar-burger:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background: black;
+  height: 2px;
+}

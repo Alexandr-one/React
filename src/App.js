@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import Main from "./components/Main/Main";
+import React, { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // const [offset, setOffset] = useState(0);
+    //
+    // useEffect(() => {
+    //     const onScroll = () => setOffset(window.pageYOffset);
+    //     // clean up code
+    //     window.removeEventListener('scroll', onScroll);
+    //     window.addEventListener('scroll', onScroll, { passive: true });
+    //     return () => window.removeEventListener('scroll', onScroll);
+    // }, []);
+    //
+    // if(offset >90){
+    //     document.getElementById('navbar').classList.remove('navbar-active');
+    //     document.getElementById('navbar').classList.add('navbar');
+    // } else if(offset < 90){
+    //     document.getElementById('navbar').classList.add('navbar-active');
+    //     document.getElementById('navbar').classList.remove('navbar');
+    // }
+    return (
+      <div className={'main'}>
+        <Navbar />
+        <Main />
+      </div>
   );
 }
 
